@@ -1,0 +1,320 @@
+body {
+    background-color: rgb(255, 253, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+#{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.imagebox {
+    position: absolute;
+    right: 0%;
+    top: 8%;
+    width: 80%;
+    height: 80%;
+    display: inline-block;
+}
+
+.content {
+    height: 100%;
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.content .imagesunfading{
+    height: 100%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.imagesunfading img{
+    height: 100%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.content .slide{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 400px;
+    width: 40%;
+    cursor: pointer;
+}
+
+.content .right{
+    right: 0;
+}
+
+
+
+.heading {
+color: rgb(87, 87, 87);
+position:fixed;
+top:5%;
+left: 5%;
+font-family: roboto ;
+text-decoration: none;
+}
+.divheading {
+    width: fit-content;
+}
+
+.copyright {
+    font-family: roboto;
+    font-size: small;
+    position: fixed;
+    right: 3%;
+    bottom: 2%;
+    color: rgb(87, 87, 87);
+}
+
+.instagramdiv {
+    position: fixed;
+    left: 5%;
+    bottom: 5%;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+.pages {
+    color: black;
+    font-family: roboto thin;
+}
+
+.aperpetualimplosion {
+    font-family: roboto ;
+    color: rgb(74, 74, 74);
+    font-style: italic;
+}
+
+.unfading {
+    font-family: roboto ;
+    color: rgb(74, 74, 74);
+    font-style: italic;
+}
+
+.walkingincolour {
+    font-family: roboto ;
+    color: rgb(74, 74, 74);
+    font-style: italic;
+}
+
+.artistportraits {
+    font-family: roboto ;
+    color: rgb(74, 74, 74);
+    font-style: italic;
+}
+
+.bio {
+    font-family: roboto ;
+    color: rgb(74, 74, 74);
+    font-style: italic;
+}
+
+.contact {
+    font-family: roboto ;
+    color: rgb(74, 74, 74);
+    font-style: italic;
+}
+
+.page4 {
+    position: fixed;
+    top: 20%;
+    left: 5%;
+}
+
+.page1 {
+    position: fixed;
+    top: 24%;
+    left: 5%;
+}
+
+
+.page3 {
+    position: fixed;
+    top: 28%;
+    left: 5%;
+}
+
+.page2 {
+    position: fixed;
+    top: 32%;
+    left: 5%;
+}
+
+.pagebio {
+    position: fixed;
+    top: 36%;
+    left: 5%;
+}
+
+.aboutbox {
+    position: absolute;
+    top: 9.2%;
+    left: 10%;
+    width: 80%;
+    font-family: roboto;
+    color: rgb(50, 50, 50);
+}
+
+.about {
+    color: rgb(87, 87, 87);
+    font-size: 23px;
+}
+
+.pagecontact {
+    position: fixed;
+    top: 40%;
+    left: 5%;
+}
+
+.contactbox {
+    position: absolute;
+    top: 9.2%;
+    left: 10%;
+    font-family: roboto;
+    color: rgb(50, 50, 50);
+}
+
+.contactme {
+    color: rgb(87, 87, 87);
+    font-size: 23px;
+}
+
+.instagramlink {
+    color: rgb(50, 50, 50);
+}
+
+.emaillink {
+    color: rgb(50, 50, 50);
+}
+
+
+@media only screen and (max-width: 450px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .imagebox {
+        position: absolute;
+        right: 0%;
+        top: 15%;
+        width: 100%;
+        height: 30%;
+        display: inline-block;
+    }
+    
+    .content {
+        height: 250px;
+        width: screen;
+        overflow: hidden;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px 0px 0px;
+    }
+    
+    .content .imagesunfading{
+        height: 100%;
+        display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: auto;
+    }
+    
+    .imagesunfading img{
+        height: 100%;
+        display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: auto;
+    }
+
+    .page4 {
+        position: fixed;
+        top: 70%;
+        left: 5%;
+    }
+    
+    .page1 {
+        position: fixed;
+        top: 74%;
+        left: 5%;
+    }
+    
+    
+    .page3 {
+        position: fixed;
+        top: 78%;
+        left: 5%;
+    }
+    
+    .page2 {
+        position: fixed;
+        top: 82%;
+        left: 5%;
+    }
+    
+    .pagebio {
+        position: fixed;
+        top: 86%;
+        left: 5%;
+    }
+
+    .aboutbox {
+        position: absolute;
+        top: 9.2%;
+        left: 5%;
+        width: 80%;
+        font-family: roboto;
+        font-size: 12px;
+        line-height: 1.35;
+        color: rgb(50, 50, 50);
+    }
+
+    .pagecontact {
+        position: fixed;
+        top: 90%;
+        left: 5%;
+    }
+
+    .contactbox {
+        position: absolute;
+        top: 9.2%;
+        left: 5%;
+        font-family: roboto;
+        font-size: 12px;
+        line-height: 1.35;
+        color: rgb(50, 50, 50);
+    }
+
+    .instagramdiv {
+        position: fixed;
+        right: 5%;
+        top: 5%;
+        left: auto;
+        bottom: auto;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+    }
+}
