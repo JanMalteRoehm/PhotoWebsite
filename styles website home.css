@@ -213,7 +213,7 @@ color: rgb(87, 87, 87);
 position:fixed;
 top:5%;
 left: 5%;
-font-family: 'roboto' ; sans-serif;
+font-family: 'roboto' ;
 text-decoration: none;
 }
 .divheading {
@@ -248,12 +248,12 @@ text-decoration: none;
 
 .pages {
     color: black;
-    font-family: 'roboto thin'; sans-serif;
+    font-family: 'roboto thin';
     font-size: 11pt;
 }
 
 .werdenwirfliegenwieeinphoenix {
-    font-family: 'roboto' ; sans-serif;
+    font-family: 'roboto' ;
     color: rgb(74, 74, 74);
     font-style: italic;
     font-size: 11pt;
@@ -261,7 +261,7 @@ text-decoration: none;
 }
 
 .unfading {
-    font-family: 'roboto' ; sans-serif;
+    font-family: 'roboto' ;
     color: rgb(74, 74, 74);
     font-style: italic;
     font-size: 11pt;
@@ -269,7 +269,7 @@ text-decoration: none;
 }
 
 .walkingincolour {
-    font-family: 'roboto' ; sans-serif;
+    font-family: 'roboto' ;
     color: rgb(74, 74, 74);
     font-style: italic;
     font-size: 11pt;
@@ -277,7 +277,7 @@ text-decoration: none;
 }
 
 .currentexplorations {
-    font-family: 'roboto' ; sans-serif;
+    font-family: 'roboto' ;
     color: rgb(74, 74, 74);
     font-style: italic;
     font-size: 11pt;
@@ -306,7 +306,7 @@ text-decoration: none;
 }
 
 .bio {
-    font-family: 'roboto' ; sans-serif;
+    font-family: 'roboto' ;
     color: rgb(74, 74, 74);
     font-style: italic;
     font-size: 11pt;
@@ -314,7 +314,7 @@ text-decoration: none;
 }
 
 .contact {
-    font-family: 'roboto' ; sans-serif;
+    font-family: 'roboto' ;
     color: rgb(74, 74, 74);
     font-style: italic;
     font-size: 11pt;
@@ -370,7 +370,7 @@ text-decoration: none;
     left: 35%;
     width: 55%;
     top: 8.2%;
-    font-family: 'roboto'; sans-serif;
+    font-family: 'roboto';
     color: rgb(50, 50, 50);
     line-height: 17pt;
     display: inline-block;
@@ -395,7 +395,7 @@ text-decoration: none;
     position: absolute;
     top: 9.2%;
     left: 10%;
-    font-family: 'roboto'; sans-serif;
+    font-family: 'roboto';
     color: rgb(87, 87, 87);
     line-height: 17pt;
     font-size: 11pt;
@@ -569,7 +569,7 @@ text-decoration: none;
         overflow: auto;
         left: 5%;
         width: 80%;
-        font-family: 'roboto'; sans-serif;
+        font-family: 'roboto';
         font-size: 15px;
         line-height: 1.35;
         color: rgb(50, 50, 50);
@@ -585,7 +585,7 @@ text-decoration: none;
         position: absolute;
         top: 9.2%;
         left: 5%;
-        font-family: 'roboto'; sans-serif;
+        font-family: 'roboto';
         font-size: 15px;
         line-height: 1.35;
         color: rgb(50, 50, 50);
