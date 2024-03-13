@@ -1,9 +1,9 @@
 body {
-    background-color: rgb(255, 253, 247);
+    background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 100%;
     
 }
 
@@ -13,6 +13,8 @@ body {
     box-sizing: border-box;
 }
 
+
+
 .imagebox {
     position: absolute;
     right: 0%;
@@ -20,6 +22,26 @@ body {
     width: 80%;
     height: 80%;
     display: inline-block;
+    z-index: -1;
+}
+
+.home .imagebox {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    width: 70%;
+    height: 100%;
+    display: inline-block;
+    z-index: -1;
+}
+
+.home .content {
+    height: 100vh;
+    right: 0%;
+}
+.home .imagesunfading img{
+    height: 100vh;
+    right: 0%;
 }
 
 .content {
@@ -54,12 +76,134 @@ body {
     top: 50%;
     transform: translateY(-50%);
     height: 400px;
-    width: 40%;
+    width: fit-content;
     cursor: pointer;
 }
 
 .content .right{
     right: 0;
+}
+
+.arrowleft {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2rem;
+    opacity: 0.5;
+    padding: 30px 30px;
+}
+
+.arrowright {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2rem;
+    opacity: 0.5;
+    padding: 30px 30px;
+}
+
+.slide img:hover{
+    opacity: 1;
+}
+
+.gallerycontainer{
+    position: absolute;
+    right: 0%;
+    top: 8%;
+    width: 70%;
+    height: 80%;
+    display: inline-block;
+}
+.gallery {
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-between;
+    margin: 50px;
+    margin-top: 0px;
+}
+.gallery .rows{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+.gallery .rows img{
+    width: 100%;
+    padding-bottom: 6px;
+}
+
+
+.divmyname {
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+}
+
+.myname {
+    color: rgb(70, 152, 163);
+    font-family: roboto;
+    font-size: 50pt;
+    outline: 20pt;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+.dropdownmenu ul{
+    list-style: none;
+    background-color: rgba(235, 235, 235, 0.532);
+    width: fit-content;
+    position: fixed;
+    top: 60%;
+    display: block;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+    padding: 0%;
+}
+.dropdownmenu ul li{
+    display: inline-block;
+    position: relative;
+    width: fit-content;
+}
+.dropdownmenu ul li a{
+    display: block;
+    padding: 7px 20px;
+    color: rgb(70, 152, 163);
+    text-decoration: none;
+    text-align: center;
+    font-size: 36px;
+    font-family: roboto;
+    -webkit-text-stroke: 0.3px black;
+}
+.dropdownmenu ul li ul.projectbox li{
+    display: block;
+}
+.dropdownmenu ul li ul.projectbox{
+    white-space: nowrap;
+    background-color: rgba(255, 255, 255, 0.55);
+    position: absolute;
+    z-index: 999;
+    display: none;
+    padding: 10px;
+}
+.dropdownmenu ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.555);
+}
+.dropdownmenu ul li:hover ul.projectbox{
+    display: block;
+}
+.projectbox a{
+    font-size: 20pt;
 }
 
 
@@ -69,12 +213,14 @@ color: rgb(87, 87, 87);
 position:fixed;
 top:5%;
 left: 5%;
-font-family: roboto ;
+font-family: 'roboto' ; sans-serif;
 text-decoration: none;
 }
 .divheading {
     width: fit-content;
 }
+
+
 
 .copyright {
     font-family: roboto;
@@ -83,56 +229,96 @@ text-decoration: none;
     right: 3%;
     bottom: 2%;
     color: rgb(87, 87, 87);
+    background-color: white;
+    z-index: 100;
+    padding: 3px 3px;
+    display: none;
 }
 
 .instagramdiv {
     position: fixed;
     left: 5%;
     bottom: 5%;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     display: inline-block;
+    opacity: 0.7;
+    display: none;
 }
 
 .pages {
     color: black;
-    font-family: roboto thin;
+    font-family: 'roboto thin'; sans-serif;
+    font-size: 11pt;
 }
 
-.aperpetualimplosion {
-    font-family: roboto ;
+.werdenwirfliegenwieeinphoenix {
+    font-family: 'roboto' ; sans-serif;
     color: rgb(74, 74, 74);
     font-style: italic;
+    font-size: 11pt;
+
 }
 
 .unfading {
-    font-family: roboto ;
+    font-family: 'roboto' ; sans-serif;
     color: rgb(74, 74, 74);
     font-style: italic;
+    font-size: 11pt;
+
 }
 
 .walkingincolour {
-    font-family: roboto ;
+    font-family: 'roboto' ; sans-serif;
     color: rgb(74, 74, 74);
     font-style: italic;
+    font-size: 11pt;
+
 }
 
-.artistportraits {
-    font-family: roboto ;
+.currentexplorations {
+    font-family: 'roboto' ; sans-serif;
     color: rgb(74, 74, 74);
     font-style: italic;
+    font-size: 11pt;
+
+}
+
+.textbox {
+    position: absolute;
+    right: 0%;
+    top: 10%;
+    width: 75%;
+    height: 80%;
+    display: inline-block;
+    z-index: -1;
+}
+
+.textcontent {
+    height: 100%;
+    width: 80%;
+    overflow: auto;
+    position: relative;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
 }
 
 .bio {
-    font-family: roboto ;
+    font-family: 'roboto' ; sans-serif;
     color: rgb(74, 74, 74);
     font-style: italic;
+    font-size: 11pt;
+
 }
 
 .contact {
-    font-family: roboto ;
+    font-family: 'roboto' ; sans-serif;
     color: rgb(74, 74, 74);
     font-style: italic;
+    font-size: 11pt;
+
 }
 
 .page4 {
@@ -166,18 +352,37 @@ text-decoration: none;
     left: 5%;
 }
 
-.aboutbox {
+
+.mypicture {
     position: absolute;
-    top: 9.2%;
-    left: 10%;
-    width: 80%;
-    font-family: roboto;
-    color: rgb(50, 50, 50);
+    top: 20%;
+    left: 30%;
+    display: inline-block;
+    z-index: -1;
 }
 
-.about {
+.mypicture img{
+    height: 50vh;
+}
+
+.aboutbox {
+    position: absolute;
+    left: 35%;
+    width: 55%;
+    top: 8.2%;
+    font-family: 'roboto'; sans-serif;
+    color: rgb(50, 50, 50);
+    line-height: 17pt;
+    display: inline-block;
+    overflow-y: auto;
+
+}
+
+.artiststatement {
     color: rgb(87, 87, 87);
-    font-size: 23px;
+    font-size: 11pt;
+    overflow-y: auto;
+
 }
 
 .pagecontact {
@@ -190,13 +395,15 @@ text-decoration: none;
     position: absolute;
     top: 9.2%;
     left: 10%;
-    font-family: roboto;
-    color: rgb(50, 50, 50);
+    font-family: 'roboto'; sans-serif;
+    color: rgb(87, 87, 87);
+    line-height: 17pt;
+    font-size: 11pt;
 }
 
 .contactme {
     color: rgb(87, 87, 87);
-    font-size: 23px;
+    font-size: 11pt;
 }
 
 .instagramlink {
@@ -208,7 +415,7 @@ text-decoration: none;
 }
 
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 480px) {
     * {
         margin: 0;
         padding: 0;
@@ -217,83 +424,160 @@ text-decoration: none;
     .imagebox {
         position: absolute;
         right: 0%;
-        top: 15%;
+        top: 10%;
         width: 100%;
-        height: 30%;
+        height: auto;
         display: inline-block;
     }
     
     .content {
-        height: 250px;
         width: screen;
         overflow: hidden;
         display: block;
         margin-left: auto;
         margin-right: auto;
         padding: 0px 0px 0px;
+        max-height: 480px;
     }
     
     .content .imagesunfading{
-        height: 100%;
-        display: block;
+        height: 480px;
+        display: flex;
       margin-left: auto;
       margin-right: auto;
-      width: auto;
+      max-width: 100%;
     }
     
     .imagesunfading img{
-        height: 100%;
+        max-height: 400px;
         display: block;
       margin-left: auto;
       margin-right: auto;
-      width: auto;
+      width: 100%;
+      padding: 20px;
+      object-fit: contain;
     }
+
+    .arrowleft {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        display: block;
+        top: 100%;
+        left: 500%;
+        opacity: 0.5;
+        padding: 10px 10px;
+        padding-top: 30px;
+    }
+    .arrowright {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        display: block;
+        top: 100%;
+        opacity: 0.5;
+        padding: 10px 10px;
+        padding-top: 30px;
+        right: 10%;
+    }
+    
+    .gallerycontainer{
+        position: absolute;
+        top: 13%;
+        width: 100%;
+        height: 445px;
+        display: inline-block;
+        overflow-y: auto;
+        
+    }
+    .gallery {
+        position: relative;
+        display: block;
+        justify-content: space-between;
+        margin: 50px;
+        margin-top: 0px;
+        height: 100%;
+        object-fit: contain;
+    }
+    .gallery .rows{
+        display: flex;
+        width: 100%;
+    }
+    .gallery .rows img{
+        width: 100%;
+        padding-bottom: 6px;
+    }
+    
 
     .page4 {
         position: fixed;
-        top: 60%;
+        top: 70%;
         left: 5%;
     }
     
     .page1 {
         position: fixed;
-        top: 64%;
+        top: 74%;
         left: 5%;
     }
     
     
     .page3 {
         position: fixed;
-        top: 68%;
+        top: 78%;
         left: 5%;
     }
     
     .page2 {
         position: fixed;
-        top: 72%;
+        top: 82%;
         left: 5%;
     }
     
     .pagebio {
         position: fixed;
-        top: 76%;
+        top: 86%;
         left: 5%;
+    }
+
+    .textbox{
+        position: absolute;
+        right: 0%;
+        width: 100%;
+        height: 30%;
+        display: inline-block;
+    }
+
+    .textcontent{
+        height: 430px;
+        width: screen;
+        overflow: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px 0px 0px;
+    }
+
+    .mypicture {
+        left: 0%;
+        top: 15%;
+        display: none;
     }
 
     .aboutbox {
         position: absolute;
-        top: 9.2%;
+        overflow: auto;
         left: 5%;
         width: 80%;
-        font-family: roboto;
-        font-size: 12px;
+        font-family: 'roboto'; sans-serif;
+        font-size: 15px;
         line-height: 1.35;
         color: rgb(50, 50, 50);
     }
 
     .pagecontact {
         position: fixed;
-        top: 80%;
+        top: 90%;
         left: 5%;
     }
 
@@ -301,8 +585,8 @@ text-decoration: none;
         position: absolute;
         top: 9.2%;
         left: 5%;
-        font-family: roboto;
-        font-size: 12px;
+        font-family: 'roboto'; sans-serif;
+        font-size: 15px;
         line-height: 1.35;
         color: rgb(50, 50, 50);
     }
@@ -315,6 +599,6 @@ text-decoration: none;
         bottom: auto;
         width: 40px;
         height: 40px;
-        display: inline-block;
+        display: none;
     }
 }

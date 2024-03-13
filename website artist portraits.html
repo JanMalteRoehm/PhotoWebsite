@@ -7,7 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jan Malte Röhm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles website home.css">
+    <link rel="stylesheet" href="lightbox.css">
 
 </head>
 
@@ -19,19 +23,19 @@
     
     
        <div class="page4"">
-        <a class="pages" href="index.html" style="text-decoration: none;" >A perpetual implosion (2023)</a>
+        <a class="pages" href="website wwfwep.html" style="text-decoration: none;" >Werden wir fliegen wie ein Phoenix (2023)</a>
        </div>
 
        <div class="page1"">
         <a class="pages" href="website unfading.html" style="text-decoration: none;" >Unfading (2022)</a>
        </div>
     
-       <div class="page2">
+       <div class="page3">
         <a class="pages" href="website walking in colour.html" style="text-decoration: none;" >Walking in colour (2021)</a>
        </div>
     
-       <div class="page3">
-        <a class="artistportraits" href="website artist portraits.html" style="text-decoration: none;" >Artist portraits (2022)</a> 
+       <div class="page2">
+        <a class="currentexplorations" href="website artist portraits.html" style="text-decoration: none;" >Current explorations</a> 
        </div>
 
        <div class="pagebio"">
@@ -47,34 +51,94 @@
        </p>
     
        <div class="instagramdiv">
-        <a class="instagram" href="https://www.instagram.com/jn_mlte02/" target="_blank" >
+        <a class="instagram" href="https://www.instagram.com/roehmjanmalte/" target="_blank" >
             <img src="./imageswebsite/instagram.png" width="40px">
         </a>
         </div>
 
-        <div class="imagebox">
-            <div class="content">
-            <div class="imagesunfading">
-                <img loading="lazy" src="./docs/assets/artistportraits/madita.jpg" class="pic">
-                <img loading="lazy" src="./docs/assets/artistportraits/valentin.jpg" class="pic">
-                <img loading="lazy" src="./docs/assets/artistportraits/jonas.jpg" class="pic">
-                <img loading="lazy" src="./docs/assets/artistportraits/saskia.jpg" class="pic">
-                <img loading="lazy" src="./docs/assets/artistportraits/melissa.jpg" class="pic">
-                <img loading="lazy" src="./docs/assets/artistportraits/pascal.jpg" class="pic">
-                <img loading="lazy" src="./docs/assets/artistportraits/celine.jpg" class="pic">
-            </div>
-            <div onclick="side_slide(-1)" class="slide left">
-                <span class="fa fa-angle-left"></span>
-            </div>
-            <div onclick="side_slide(1)" class="slide right">
-                <span class="fa fa-angle-right"></span>
-            </div>
+        <div class="gallerycontainer">
+            <div class="gallery">
+                <div class="rows">
+                    <a href="docs/assets/artistportraits/eva.jpg" data-lightbox=currentexplorations data-caption="celine">
+                        <img src="docs/assets/artistportraits/eva.jpg" alt="">
+                    </a>
+                    
+                    <a href="docs/assets/bestof/lakeselfie.jpg" data-lightbox=currentexplorations data-caption="lakeselfie">
+                        <img src="docs/assets/bestof/lakeselfie.jpg" alt="">
+                    </a>
+                    
+                    <a href="docs/assets/currentexplorations/pigeonwoman.jpg" data-lightbox=currentexplorations data-caption="celine">
+                        <img src="docs/assets/currentexplorations/pigeonwoman.jpg" alt="">
+                    </a>
+                    <a href="docs/assets/bestof/lakeslide.jpg" data-lightbox=currentexplorations data-caption="lakeslide">
+                        <img src="docs/assets/bestof/lakeslide.jpg" alt="">
+                    </a>
+                    <a href="docs/assets/currentexplorations/flooding1.jpg" data-lightbox=currentexplorations data-caption="wwfwep">
+                        <img src="docs/assets/currentexplorations/flooding1.jpg" alt="">
+                    </a>
+                     
+                    
+                    
+                    <a href="docs/assets/currentexplorations/girlsstreet.jpg" data-lightbox=currentexplorations data-caption="walking">
+                        <img src="docs/assets/currentexplorations/girlsstreet.jpg" alt="">
+                    </a>
+                    
+                </div>
+                <div class="rows">
+                    <a href="docs/assets/bestof/bremenarchitecture.jpg" data-lightbox=currentexplorations data-caption="bremenarchitecture">
+                        <img src="docs/assets/bestof/bremenarchitecture.jpg" alt="">
+                    </a>
+                    <a href="docs/assets/currentexplorations/child soldier web.jpg" data-lightbox=currentexplorations data-caption="celine">
+                        <img src="docs/assets/currentexplorations/child soldier web.jpg" alt="">
+                    </a>
+                    
+                    
+                    <a href="docs/assets/currentexplorations/flooding2.jpg" data-lightbox=currentexplorations data-caption="unfading">
+                        <img src="docs/assets/currentexplorations/flooding2.jpg" alt="">
+                    </a>
+                    <a href="docs/assets/currentexplorations/madita.jpg" data-lightbox=currentexplorations data-caption="celine">
+                        <img src="docs/assets/currentexplorations/madita.jpg" alt="">
+                    </a>
+                    
+                    <a href="docs/assets/currentexplorations/swan.jpg" data-lightbox=currentexplorations data-caption="celine">
+                        <img src="docs/assets/currentexplorations/swan.jpg" alt="">
+                    </a>
+                    
+                    <a href="docs/assets/currentexplorations/soldierrain.jpg" data-lightbox=currentexplorations data-caption="walking">
+                        <img src="docs/assets/currentexplorations/soldierrain.jpg" alt="">
+                    </a>
+                </div>
+                <div class="rows">
+                    <a href="docs/assets/currentexplorations/soldierprofile.jpg" data-lightbox=currentexplorations data-caption="walking">
+                        <img src="docs/assets/currentexplorations/soldierprofile.jpg" alt="">
+                    </a>
+                    
+                    
+                    
+                    <a href="docs/assets/currentexplorations/jonas.jpg" data-lightbox=currentexplorations data-caption="celine">
+                        <img src="docs/assets/currentexplorations/jonas.jpg" alt="">
+                    </a>
+                    
+                    
+                    <a href="docs/assets/currentexplorations/breminalechair.jpg" data-lightbox=currentexplorations data-caption="soldier">
+                        <img src="docs/assets/currentexplorations/breminalechair.jpg" alt="">
+                    </a>
+                    
+                    
+                    <a href="docs/assets/currentexplorations/swanfather.jpg" data-lightbox=currentexplorations data-caption="celine">
+                        <img src="docs/assets/currentexplorations/swanfather.jpg" alt="">
+                    </a>
+                    <a href="docs/assets/currentexplorations/deadbird.jpg" data-lightbox=currentexplorations data-caption="walking">
+                        <img src="docs/assets/currentexplorations/deadbird.jpg" alt="">
+                    </a>
+                </div>
+
             </div>
         </div>
-        
-        <script src="website home.js"></script>
 
 
+
+<script src="lightbox-plus-jquery.js"></script>
 
 </body>
 </html>
