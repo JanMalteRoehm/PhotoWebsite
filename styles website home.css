@@ -445,6 +445,7 @@ text-decoration: none;
       margin-left: auto;
       margin-right: auto;
       max-width: 100%;
+      background-color: aqua;
     }
     
     .imagesunfading img{
@@ -454,8 +455,9 @@ text-decoration: none;
       margin-right: auto;
       width: 100%;
       padding: 20px;
+      padding-right: 20px;
       object-fit: contain;
-      transform: translateX(0%);
+      background-color: brown;
     }
 
     .arrowleft {
