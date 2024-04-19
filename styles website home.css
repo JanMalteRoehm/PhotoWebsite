@@ -91,7 +91,7 @@ body {
     display: block;
     top: 50%;
     transform: translateY(-50%);
-    left: 2rem;
+    left: 22%;
     opacity: 0.5;
     padding: 30px 30px;
 }
@@ -425,7 +425,7 @@ text-decoration: none;
         position: absolute;
         top: 10%;
         width: 100%;
-        max-height: 60vh;
+        max-height: 57vh;
         display: inline-block;
     }
     
@@ -436,11 +436,9 @@ text-decoration: none;
         margin-left: auto;
         margin-right: auto;
         padding: 0px 0px 0px;
-        max-height: 480px;
     }
     
     .content .imagesunfading{
-        height: 480px;
         display: flex;
       margin-left: auto;
       margin-right: auto;
@@ -448,36 +446,36 @@ text-decoration: none;
     }
     
     .imagesunfading img{
-        max-height: 375px;
         display: block;
       margin-left: auto;
       margin-right: auto;
       width: 100%;
-      padding: 20px;
+      height: 90%;
       object-fit: contain;
+      padding-top: 5%;
     }
 
     .arrowleft {
         width: 30px;
         height: 30px;
-        position: relative;
+        position: absolute;
         display: block;
-        top: 95%;
-        left: 500%;
+        top: 65vh;
+        left: 70%;
         opacity: 0.5;
         padding: 10px 10px;
-        padding-top: 30px;
+        padding-top: 10px;
     }
     .arrowright {
         width: 30px;
         height: 30px;
-        position: relative;
+        position: absolute;
         display: block;
-        top: 95%;
+        top: 65vh;
+        right: 3%;
         opacity: 0.5;
         padding: 10px 10px;
-        padding-top: 30px;
-        right: 10%;
+        padding-top: 10px;
     }
     
     .gallerycontainer{
@@ -487,7 +485,6 @@ text-decoration: none;
         height: 55vh;
         display: inline-block;
         overflow-y: auto;
-        
     }
     .gallery {
         position: relative;
@@ -548,13 +545,14 @@ text-decoration: none;
     }
 
     .textcontent{
-        height: 430px;
+        height: 55vh;
         width: screen;
         overflow: auto;
         display: block;
         margin-left: auto;
         margin-right: auto;
         padding: 0px 0px 0px;
+
     }
 
     .mypicture {
@@ -572,6 +570,7 @@ text-decoration: none;
         font-size: 15px;
         line-height: 1.35;
         color: rgb(50, 50, 50);
+
     }
 
     .pagecontact {
@@ -599,5 +598,6 @@ text-decoration: none;
         width: 40px;
         height: 40px;
         display: none;
+
     }
 }
