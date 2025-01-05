@@ -19,31 +19,21 @@
     <a class="heading" href="index.html" ><h2>Jan Malte Röhm</h2></a> 
    </div> 
 
-
-   <div class="page4"">
-    <a class="pages" href="website wwfwep.html" style="text-decoration: none;" >Werden wir fliegen wie ein Phoenix (2023)</a>
-   </div>
-
-   <div class="page1"">
-    <a class="pages" href="website unfading.html" style="text-decoration: none;" >Unfading (2022)</a>
-   </div>
-
-   <div class="page3">
-    <a class="pages" href="website walking in colour.html" style="text-decoration: none;" >Walking in colour (2021)</a>
-   </div>
-
-   <div class="page2">
-    <a class="pages" href="website artist portraits.html" style="text-decoration: none;" >Current explorations</a>
-   </div>
-
-   <div class="pagebio"">
-    <a class="pages" href="website bio.html" style="text-decoration: none;" >About</a>
+   <div class="sidenav">
+    
+    <button class="dropdown-btn">Projects
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="website marksonconcrete.html">What leaves a mark on concrete (2024)</a>
+      <a href="website wwfwep.html">Werden wir fliegen wie ein Phoenix (2023)</a>
+      <a href="website unfading.html">Unfading (2022)</a>
+      <a href="website walking in colour.html">Walking in colour (2021)</a>
     </div>
-
-   <div class="pagecontact"">
-    <a class="contact" href="website contact.html" style="text-decoration: none;" >Contact</a>
-   </div>
-
+    <a href="website bio.html">About</a>
+    <a href="website contact.html">Contact</a>
+  </div>
+  
    <p class="copyright">
     ©Jan Malte Röhm
    </p>
@@ -66,7 +56,23 @@
     </div>
 </div>
 
-
+<script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+    </script>
 
 </body>
 </html>
