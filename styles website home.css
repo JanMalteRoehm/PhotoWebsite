@@ -180,6 +180,7 @@ body {
 color: rgb(74, 74, 74);
 font-style: italic;
 font-size: 11pt;
+font-weight: normal;
   }
   
   /* Main content */
@@ -660,6 +661,7 @@ text-decoration: none;
     }
 
 }
+
 
 
 
