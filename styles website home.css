@@ -161,7 +161,7 @@ body {
   .sidenav a, .dropdown-btn {
     font-family: 'roboto' ;
     font-size: 11pt;  
-    font-weight: 100;
+    font-weight: lighter;
     padding: 0px 0px 8px 0px;
     text-decoration: none;
     color: black;
@@ -660,6 +660,7 @@ text-decoration: none;
     }
 
 }
+
 
 
 
