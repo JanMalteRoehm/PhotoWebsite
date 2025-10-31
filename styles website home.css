@@ -159,11 +159,11 @@ body {
   
   /* Style the sidenav links and the dropdown button */
   .sidenav a, .dropdown-btn {
+    font-family: 'roboto';
+    font-size: 11pt;  
     padding: 0px 0px 8px 0px;
     text-decoration: none;
     color: black;
-font-family: 'roboto';
-font-size: 11pt;
     display: block;
     border: none;
     background: none;
@@ -659,3 +659,4 @@ text-decoration: none;
     }
 
 }
+
