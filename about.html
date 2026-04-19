@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan Malte Röhm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles website home.css">
+
+</head>
+
+<body>
+    <div class="divheading" > 
+     <a class="heading" href="index.html" ><h2>Jan Malte Röhm</h2></a> 
+    </div> 
+ 
+    <div class="sidenav">
+    
+        <button class="dropdown-btn">Projects
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="dbtw.html">Dance before the War (ongoing)</a>
+          <a href="common-ground.html">Common Ground (ongoing)</a>
+          <a href="marks-on-concrete.html">What leaves a mark on concrete (2024)</a>
+          <a href="wwfwep.html">Werden wir fliegen wie ein Phoenix (2023)</a>
+          <a href="unfading.html">Unfading (2022)</a>
+          <a href="walking-in-colour.html">Walking in colour (2021)</a>
+        </div>
+        <a href="commissions.html">Commissioned</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="imprint.html">Imprint</a>
+      </div>
+      
+    <p class="copyright">
+     ©Jan Malte Röhm
+    </p>
+ 
+ <div class="instagramdiv">
+ <a class="instagram" href="https://www.instagram.com/roehmjanmalte/" target="_blank" >
+     <img src="./imageswebsite/instagram.png" width="40px">
+ </a>
+ </div>
+ 
+ <div class="mypicture">
+    <img src="./docs/assets/images/myportrait.jpg" alt="">
+ </div>
+
+ <div class="textbox">
+    <div class="textcontent">
+    <div class="aboutbox">
+        <p class="artiststatement">
+            Jan Malte Röhm (2002, Germany) is a photographer working with the threat of war in Europe and the interplay between architecture, nature and society. He preferably works in long term projects creating fragmented narratives that float between documentary and fiction. Currently he is based in Rotterdam, the Netherlands.<br><br>
+The topic of war in Europe is an overarching theme in his latest projects. “Werden wir fliegen wie ein Phoenix // Will we fly like a Phoenix” (2023) deals with Rotterdam's scars left by the destruction through Nazi-Germany and how the city has reshaped since then through meditative images of architecture and young people. “Common Ground” (ongoing) addresses the current uncertainty in Europe regarding a future of possible war and certain environmental devastation through landscape images. “Dance before the War” is his most current project. The project explores his position towards military and armament with the ongoing war Ukraine and possibility of war in Europe through portraits of young soldiers, documentary photographs, news and social media images and a performance piece.<br><br>
+His projects aim to offer space for reflection, inspire conversations and negotiate between polarized opinions.
+
+        </p>
+    </div>
+    
+    </div>
+    </div>
+</div>
+
+<script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+    </script>
+
+</body>
+</html>
