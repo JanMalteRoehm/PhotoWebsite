@@ -1,10 +1,6 @@
 body {
     background-color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100%;
-    
+    min-height: 100%;    
 }
 
 #{
@@ -15,143 +11,153 @@ body {
 
 
 
-.imagebox {
-    position: absolute;
-    right: 0%;
+/* Slideshow container */
+.slideshow-container {
+  position: absolute;
+    right: 2%;
     top: 8%;
-    width: 80%;
+    width: 71%;
     height: 80%;
     display: inline-block;
     z-index: -1;
 }
 
-.home .imagebox {
-    position: absolute;
-    right: 0%;
-    top: 0%;
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img{
+  height: 85vh;
+  display: block;
+  margin: auto;
+}
+
+
+    #video {
+   width:80%;
+   height:80vh;
+   display: block;
+   margin: auto;
+    }
+
+#projectstatementbox {
     width: 70%;
-    height: 100%;
-    display: inline-block;
-    z-index: -1;
-}
+    margin-top: 12vh;
+    margin-left: 15%;
+    }
 
-.home .content {
-    height: 100vh;
-    right: 0%;
-}
-.home .imagesunfading img{
-    height: 100vh;
-    right: 0%;
-}
+.projectstatement {
+    font-family: 'roboto' ;
+    color: rgb(74, 74, 74);
+    font-style: normal;
+    font-size: 11pt;
+    line-height: 17pt;
+    }
 
-.content {
-    height: 100%;
-    width: 80%;
-    overflow: hidden;
-    position: relative;
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
   width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(173, 173, 173);
+  font-weight: bold;
+  font-size: 36px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: rgb(74,74,74);
+}
+
+::-webkit-scrollbar {
+    width: 0.7vw;
+    height: 1.2vh;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b6b6b6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(117, 117, 117);
+}
+
+::-webkit-scrollbar-track {
+    background-color: #d8d8d8;
+}
+
+* {
+scrollbar-width: thin;
+}
+
+.media-scroller {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    height: 73vh;
+    margin-left: 28%;
+    margin-top: 8vh;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.image-element {
+    height: 60vh;
+    background-color: brown;
+}
+
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
+}
+
+.caption {
+    font-family: 'roboto' ;
+    color: rgb(74, 74, 74);
+    font-style: normal;
+    font-size: 11pt;
+}
+
+.caption2 {
+    font-family: 'roboto' ;
+    color: rgb(74, 74, 74);
+    font-style: normal;
+    font-size: 11pt;
+    text-align: center;
+}
+
+
 
 #toowide {
     width: 80%;
     height: auto;
-    margin-top: 5%;
+    margin-top: 8%;
 }
 
-.content .imagesunfading{
-    height: 100%;
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
-}
-
-.imagesunfading img{
-    height: 100%;
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
-}
-
-.content .slide{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 400px;
-    width: fit-content;
-    cursor: pointer;
-}
-
-.content .right{
-    right: 0;
-}
-
-.arrowleft {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    display: block;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 22%;
-    opacity: 0.5;
-    padding: 30px 30px;
-    z-index: 2;
-}
-
-.arrowright {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    display: block;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 2rem;
-    opacity: 0.5;
-    padding: 30px 30px;
-    z-index: 2;
-}
-
-.slide img:hover{
-    opacity: 1;
-}
-
-.gallerycontainer{
-    position: absolute;
-    right: 0%;
-    top: 8%;
-    width: 70%;
-    height: 80%;
-    display: inline-block;
-}
-.gallery {
-    display: flex;
-    flex-direction: row;   
-    justify-content: space-between;
-    margin: 50px;
-    margin-top: 0px;
-}
-.gallery .rows{
-    display: flex;
-    flex-direction: column;
-    width: 32.5%;
-}
-.gallery .rows img{
-    width: 100%;
-    padding-bottom: 6px;
-}
 
  /* Fixed sidenav, full height */
  .sidenav {
     height: 100%;
-    width: 25%;
+    width: 22%;
     position: fixed;
     z-index: 1;
-    top: 16%;
+    top: 16vh;
     left: 5%;
     overflow-x: hidden;
     padding-top: 20px;
@@ -159,12 +165,11 @@ body {
   
   /* Style the sidenav links and the dropdown button */
   .sidenav a, .dropdown-btn {
-    font-family: 'roboto' ;
-    font-size: 11pt;  
-    font-weight: lighter;
     padding: 0px 0px 8px 0px;
     text-decoration: none;
     color: black;
+    font-family: 'roboto thin';
+    font-size: 11pt;
     display: block;
     border: none;
     background: none;
@@ -180,7 +185,6 @@ body {
 color: rgb(74, 74, 74);
 font-style: italic;
 font-size: 11pt;
-font-weight: normal;
   }
   
   /* Main content */
@@ -214,17 +218,8 @@ font-weight: normal;
     left: 0%;
     right: 0%;
     margin: auto;
+    z-index: 10000;
 }
-
-.myname {
-    color: rgb(70, 152, 163);
-    font-family: roboto;
-    font-size: 50pt;
-    outline: 20pt;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
-}
-
-
 
 
 .heading {
@@ -237,6 +232,7 @@ text-decoration: none;
 }
 .divheading {
     width: fit-content;
+    z-index: 10000;
 }
 
 
@@ -265,58 +261,16 @@ text-decoration: none;
     display: none;
 }
 
-.pages {
-    color: black;
-    font-family: 'roboto thin';
-    font-size: 11pt;
-}
 
-.whatleavesamarkonconcrete {
-    font-family: 'roboto' ;
-    color: rgb(74, 74, 74);
-    font-style: italic;
-    font-size: 11pt;
 
-}
 
-.werdenwirfliegenwieeinphoenix {
-    font-family: 'roboto' ;
-    color: rgb(74, 74, 74);
-    font-style: italic;
-    font-size: 11pt;
-
-}
-
-.unfading {
-    font-family: 'roboto' ;
-    color: rgb(74, 74, 74);
-    font-style: italic;
-    font-size: 11pt;
-
-}
-
-.walkingincolour {
-    font-family: 'roboto' ;
-    color: rgb(74, 74, 74);
-    font-style: italic;
-    font-size: 11pt;
-
-}
-
-.currentexplorations {
-    font-family: 'roboto' ;
-    color: rgb(74, 74, 74);
-    font-style: italic;
-    font-size: 11pt;
-
-}
 
 .textbox {
     position: absolute;
     right: 0%;
     top: 10%;
     width: 75%;
-    height: 80%;
+    height: 90%;
     display: inline-block;
     z-index: -1;
 }
@@ -348,48 +302,8 @@ text-decoration: none;
 
 }
 
-.page5 {
-    position: fixed;
-    top: 20%;
-    left: 5%;
-}
-
-.page4 {
-    position: fixed;
-    top: 24%;
-    left: 5%;
-}
-
-.page1 {
-    position: fixed;
-    top: 28%;
-    left: 5%;
-}
 
 
-.page3 {
-    position: fixed;
-    top: 32%;
-    left: 5%;
-}
-
-.page2 {
-    position: fixed;
-    top: 36%;
-    left: 5%;
-}
-
-.pagebio {
-    position: fixed;
-    top: 40%;
-    left: 5%;
-}
-
-.pagecontact {
-    position: fixed;
-    top: 44%;
-    left: 5%;
-}
 
 .mypicture {
     position: absolute;
@@ -425,7 +339,7 @@ text-decoration: none;
 
 .contactbox {
     position: absolute;
-    top: 9.2%;
+    top: 8.2%;
     left: 10%;
     font-family: 'roboto';
     color: rgb(87, 87, 87);
@@ -453,14 +367,79 @@ text-decoration: none;
         padding: 0;
     }
 
-    .imagebox {
-        position: absolute;
-        top: 10%;
-        width: 100%;
-        max-height: 57vh;
-        display: inline-block;
+    .divheading .heading{
+       top: 3%;
+       left: 5%
     }
-    
+
+
+     .slideshow-container {
+        position: absolute;
+        top: 9%;
+        width: 100%;
+        max-height: 63%;
+        display: inline-block;
+        right: 0%;
+        overflow: hidden;
+    }  
+
+    .mySlides img{
+        width: 90%;
+        height: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #video {
+        width: 90vw; 
+        height: 50.625vw;
+        margin: auto; 
+    }
+
+    #projectstatementbox {
+        width: 90%;
+        height: 85%;
+        margin-left: 5%;
+        margin-top: 0%;
+        overflow: scroll;
+    }
+
+    #toohigh {
+        width: 70%;
+    }
+
+    #fivebyseven {
+        width: 80%;
+    }
+
+   .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 90%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(173, 173, 173);
+  font-weight: bold;
+  font-size: 36px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 5%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 65%;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
     .content {
         width: screen;
         overflow: hidden;
@@ -470,83 +449,21 @@ text-decoration: none;
         padding: 0px 0px 0px;
     }
     
-    .content .imagesunfading{
-        display: flex;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 100%;
-    }
+
 
     #toowide {
         width: 100%;
         margin-top: 0%;
     }
     
-    .imagesunfading img{
-        display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-      height: 90%;
-      object-fit: contain;
-      padding-top: 5%;
-    }
+   
 
-    .arrowleft {
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        display: block;
-        top: 65vh;
-        left: 70%;
-        opacity: 0.5;
-        padding: 10px 10px;
-        padding-top: 10px;
-        z-index: 2;
-    }
-    .arrowright {
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        display: block;
-        top: 65vh;
-        right: 3%;
-        opacity: 0.5;
-        padding: 10px 10px;
-        padding-top: 10px;
-        z-index: 2;
-    }
     
-    .gallerycontainer{
-        position: absolute;
-        top: 13%;
-        width: 100%;
-        height: 55vh;
-        display: inline-block;
-        overflow-y: auto;
-    }
-    .gallery {
-        position: relative;
-        display: block;
-        justify-content: space-between;
-        margin: 50px;
-        margin-top: 0px;
-        height: 100%;
-        object-fit: contain;
-    }
-    .gallery .rows{
-        display: flex;
-        width: 100%;
-    }
-    .gallery .rows img{
-        width: 100%;
-        padding-bottom: 6px;
-    }
     
     .sidenav {
         width: 100%;
         position: fixed;
-        top: 64% ;
+        top: 70% ;
     }
 
     .active {
@@ -556,64 +473,26 @@ text-decoration: none;
         font-size: 11pt;
     }
 
-    .page5 {
-        position: fixed;
-        top: 70%;
-        left: 5%;
-    }
-
-    .page4 {
-        position: fixed;
-        top: 74%;
-        left: 5%;
-    }
     
-    .page1 {
-        position: fixed;
-        top: 78%;
-        left: 5%;
-    }
-    
-    
-    .page3 {
-        position: fixed;
-        top: 82%;
-        left: 5%;
-    }
-    
-    .page2 {
-        position: fixed;
-        top: 86%;
-        left: 5%;
-    }
-    
-    .pagebio {
-        position: fixed;
-        top: 90%;
-        left: 5%;
-    }
-
-    .pagecontact {
-        position: fixed;
-        top: 94%;
-        left: 5%;
-    }
 
     .textbox{
         position: absolute;
         right: 0%;
+        margin-top: 0%;
+        top: 9%;
         width: 100%;
         height: 30%;
         display: inline-block;
     }
 
     .textcontent{
-        height: 55vh;
+        height: 60vh;
         width: screen;
         overflow: auto;
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 0%;
         padding: 0px 0px 0px;
 
     }
@@ -628,11 +507,12 @@ text-decoration: none;
         position: absolute;
         overflow: auto;
         left: 5%;
-        width: 80%;
+        width: 90%;
         font-family: 'roboto';
         font-size: 15px;
         line-height: 1.35;
         color: rgb(50, 50, 50);
+        top: 0%;
 
     }
 
@@ -646,6 +526,7 @@ text-decoration: none;
         font-size: 15px;
         line-height: 1.35;
         color: rgb(50, 50, 50);
+        top: 0%;
     }
 
     .instagramdiv {
@@ -660,9 +541,30 @@ text-decoration: none;
 
     }
 
+
+.media-scroller-box {
+    display: block;
+    margin-top: 9vh;
+    height: 61vh;
+    overflow-y: scroll;
+}
+
+    .media-scroller {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    height: 20vh;
+    margin-left: 5%;
+    margin-top: 5%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    overflow-y: hidden;
+}
+
+.image-element {
+    height: 20vh;
+    background-color: brown;
 }
 
 
-
-
-
+}
